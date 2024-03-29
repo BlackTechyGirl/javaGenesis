@@ -13,8 +13,12 @@ public class TwoLargest {
             System.out.println("Enter 2 numbers: ");
             int num1 = input.nextInt();
             if(num1 > largest){
+                second = largest;
                 largest = num1;
+            } else if (num1 > second && num1 != second) {
+                second = num1;
             }
+            counter++;
         }
 
 
